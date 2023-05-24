@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+
+    /* SETTING MARGIN PADDING */
+    margin: 0;
+    padding: 0;
+
+    /* BACKGROUND FONT COLOR */
+    color: black;
+    background-image: linear-gradient(rgb(32, 72, 174), rgb(78, 110, 216), rgb(32, 72, 174));
+
+    /* STYLING */
+    font-family: 'Jost', sans-serif;
+
+}
+
+.container {
+
+    /* SETTING MARGIN PADDING */
+    margin: 0% auto;
+    padding: 3% 0%;
+
+    /* FLEX */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+
+    /* SETTING MARGIN PADDING HEIGHT WIDTH */
+    padding: 5% 5%;
+    height: auto;
+    width: 360px;
+
+    /* BACKGROUND FONT COLOR */
+    border: 2px solid rgba(255, 255, 255, 0.406);
+    background-color: rgba(255, 255, 255, 0.167);
+    border-radius: 15px;
+
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.box0,
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+
+    /* MARGIN PADDING */
+    padding: 4% 6%;
+
+    /* BACKGROUND FONT COLOR */
+    border: 2px solid rgba(255, 255, 255, 0.406);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+
+.box1-1 {
+    /* FLEX */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1-2 {
+    /* FLEX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* BOX 2-5 */
+.box2,
+.box3,
+.box4,
+.box5 {
+    /* FLEX */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* BOX 6 */
+button {
+
+    /* BACKGROUND FONT COLOR */
+    color: white;
+    background-color: rgba(0, 110, 179, 0.861);
+    font-size: 1rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+
+    /* WIDTH HEIGHT */
+    width: 100%;
+    height: 50px;
+}

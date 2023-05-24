@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <form action="" id="form">
+
+                <div class="box">
+                    <!-- BOX0 OUTPUT -->
+                    <div class="box0" id="result">
+                        Click to Generate
+                    </div>
+                    <!-- BOX1 INPUT = RANGE -->
+                    <div class="box1">
+                        <!-- 1-1 -->
+                        <div class="box1-1">
+                            <div>4</div>
+                            <div class="inputdiv"><input type="range" id="length" name="length" min="4" max="32"
+                                    value="8" step="1"></div>
+                            <div>32</div>
+                        </div>
+                        <!-- 1-2 -->
+                        <div class="box1-2">
+                            <output id="output">0</output>
+                        </div>
+                    </div>
+                    <!-- BOX2 (CHECKBOX) -->
+                    <div class="box2">
+                        <div>
+                            <label for="symbols">Include Symbols</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="symbols" class="checkbox" />
+                        </div>
+                    </div>
+                    <!-- BOX3 (CHECKBOX)-->
+                    <div class="box3">
+                        <div>
+                            <label for="numbers">Include Numbers</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="numbers" class="checkbox" />
+                        </div>
+                    </div>
+                    <!-- BOX4 (CHECKBOX)-->
+                    <div class="box4">
+                        <div>
+                            <label for="lowercase">Include Lowercase</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="lowercase" class="checkbox" />
+                        </div>
+                    </div>
+                    <!-- BOX5 (CHECKBOX)-->
+                    <div class="box5">
+                        <div>
+                            <label for="uppercase">Include Uppercase</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="uppercase" class="checkbox" />
+                        </div>
+                    </div>
+                    <!-- BOX6 BUTTON -->
+                    <div class="box6">
+                        <button type="button" onclick="oneclick()" value="submit" id="button">Generate</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="index.js"> </script>
+    </body>
+</html>

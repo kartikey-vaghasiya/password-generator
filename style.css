@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap');
 
 html {
-    height: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,30 +22,31 @@ body {
 .container {
 
     /* SETTING MARGIN PADDING */
-    margin: 0% auto;
-    padding: 3% 0%;
+    margin-inline: auto;
+    width: 100vw;
+    height: 100vh;
 
-    /* FLEX */
-    display: flex;
+    display: grid;
+    align-content: center;
     justify-content: center;
-    align-items: center;
+    padding: 0%;
 
 }
 
 .box {
 
     /* SETTING MARGIN PADDING HEIGHT WIDTH */
-    padding: 5% 5%;
-    height: auto;
-    width: 360px;
+    padding: 5% 1rem;
 
+    min-width: 350px;
     /* BACKGROUND FONT COLOR */
-    border: 2px solid rgba(255, 255, 255, 0.406);
+    border: 0px solid rgba(255, 255, 255, 0.406);
     background-color: rgba(255, 255, 255, 0.167);
     border-radius: 15px;
 
     /* FLEX */
     display: flex;
+    align-content: center;
     flex-direction: column;
     gap: 10px;
 
@@ -61,8 +62,9 @@ body {
     /* MARGIN PADDING */
     padding: 4% 6%;
 
+    width: 300px;
     /* BACKGROUND FONT COLOR */
-    border: 2px solid rgba(255, 255, 255, 0.406);
+    border: 0px solid rgba(255, 255, 255, 0.406);
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
 }
